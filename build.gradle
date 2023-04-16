@@ -24,6 +24,13 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
 //	implementation 'org.springdoc:springdoc-openapi-ui:1.6.14'
 
+	// To fix vulnerability, upgraded snakeyaml to 2.0
+	// NAME       INSTALLED  FIXED-IN  TYPE          VULNERABILITY        SEVERITY
+	// snakeyaml  1.33       2.0       java-archive  GHSA-mjmj-j48q-9wg2  High
+	// https://mvnrepository.com/artifact/org.yaml/snakeyaml
+	implementation 'org.yaml:snakeyaml:2.0'
+
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
